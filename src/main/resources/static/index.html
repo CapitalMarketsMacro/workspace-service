@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace Service</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .welcome {
+            text-align: center;
+            padding: 3rem;
+            max-width: 32rem;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 0 0 0.5rem;
+            letter-spacing: -0.02em;
+        }
+        .sub {
+            color: #94a3b8;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+        .links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .links a {
+            color: #38bdf8;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid #334155;
+            border-radius: 0.5rem;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .links a:hover {
+            background: rgba(56, 189, 248, 0.1);
+            border-color: #38bdf8;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome">
+        <h1>Welcome</h1>
+        <p class="sub">Workspace Service — Capital Markets</p>
+        <div class="links">
+            <a href="/dock-admin.html">Dock Config Admin</a>
+            <a href="/swagger-ui.html">API (Swagger)</a>
+            <a href="/actuator/health">Health</a>
+            <a href="/dockConfig">Dock Config</a>
+            <a href="/dockProvider">Dock Provider</a>
+        </div>
+    </div>
+</body>
+</html>
